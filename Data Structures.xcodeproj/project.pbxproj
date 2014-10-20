@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		26D71D3F19F49D5B00282EB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D3E19F49D5B00282EB5 /* main.m */; };
+		26D71D4A19F4A39500282EB5 /* ECQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D4919F4A39500282EB5 /* ECQueue.m */; };
+		26D71D4D19F4A3D000282EB5 /* ECStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D4C19F4A3D000282EB5 /* ECStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		26D71D3B19F49D5B00282EB5 /* Data Structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Data Structures"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D71D3E19F49D5B00282EB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26D71D4819F4A39500282EB5 /* ECQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECQueue.h; sourceTree = "<group>"; };
+		26D71D4919F4A39500282EB5 /* ECQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECQueue.m; sourceTree = "<group>"; };
+		26D71D4B19F4A3D000282EB5 /* ECStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECStack.h; sourceTree = "<group>"; };
+		26D71D4C19F4A3D000282EB5 /* ECStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +64,36 @@
 			isa = PBXGroup;
 			children = (
 				26D71D3E19F49D5B00282EB5 /* main.m */,
+				26D71D4519F4A27B00282EB5 /* Classes */,
 			);
 			path = "Data Structures";
+			sourceTree = "<group>";
+		};
+		26D71D4519F4A27B00282EB5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				26D71D4E19F4A3DC00282EB5 /* Queue */,
+				26D71D4F19F4A3EA00282EB5 /* Stack */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		26D71D4E19F4A3DC00282EB5 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				26D71D4819F4A39500282EB5 /* ECQueue.h */,
+				26D71D4919F4A39500282EB5 /* ECQueue.m */,
+			);
+			name = Queue;
+			sourceTree = "<group>";
+		};
+		26D71D4F19F4A3EA00282EB5 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				26D71D4B19F4A3D000282EB5 /* ECStack.h */,
+				26D71D4C19F4A3D000282EB5 /* ECStack.m */,
+			);
+			name = Stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				26D71D3F19F49D5B00282EB5 /* main.m in Sources */,
+				26D71D4D19F4A3D000282EB5 /* ECStack.m in Sources */,
+				26D71D4A19F4A39500282EB5 /* ECQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
