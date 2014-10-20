@@ -10,4 +10,9 @@
 
 @interface ECStack : NSObject
 
+-(id)top;
+-(void)pop;
+-(BOOL)empty;
+-(void)push:(id)object;
+
 @end

@@ -8,6 +8,42 @@
 
 #import "ECQueue.h"
 
-@implementation ECQueue
+@implementation ECQueue {
+    
+    NSMutableArray * array;
+}
+
+- (instancetype)init {
+    
+    self = [super init];
+    if (self) {
+        
+        array = [NSMutableArray array];
+        
+    }
+    return self;
+}
+
+-(id)top {
+    
+    return [array firstObject];
+}
+
+-(void)pop {
+    
+    if ([array firstObject]) {
+        [array removeObjectAtIndex:0];
+    }
+}
+
+-(BOOL)empty {
+    
+    return [array firstObject] == nil;
+}
+
+-(void)push:(id)object {
+    
+    [array addObject:object];
+}
 
 @end
