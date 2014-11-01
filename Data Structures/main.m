@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ECQueue.h"
+#import "ECStack.h"
+#import "ECBinaryHeap.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        ECBinaryHeap * bh = [[ECBinaryHeap alloc] initWithArray:@[@(3), @(7), @(8), @(4), @(2), @(46), @(7), @(5), @(1), @(2), @(4)]];
+        NSLog(@"%@", [bh top]);
+        
     }
     return 0;
 }
