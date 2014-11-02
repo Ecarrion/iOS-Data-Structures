@@ -14,7 +14,9 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
+        
+        
+        //Simple heap sort using a Priority Queue
         ECPriorityQueue * bh = [[ECPriorityQueue alloc] initWithArray:@[@(3), @(7), @(8), @(4), @(2), @(46), @(7), @(5), @(1), @(2), @(4)]
                                                       andCompareBlock:^BOOL(id obj1, id obj2) {
                                                           
@@ -29,11 +31,7 @@ int main(int argc, const char * argv[]) {
         
         
         
-        puts("");
-        puts("---------------------------------------------------");
-        puts("");
-        
-        
+        //Simple permutation, reverse the comparitionBlock for prevPermutation
         NSMutableArray * arr = [@[@"a", @"a", @"b"] mutableCopy];
         do {
             NSLog(@"%@", arr);
@@ -48,6 +46,7 @@ int main(int argc, const char * argv[]) {
             return NO;
             
         }]);
+        
     }
     return 0;
 }
