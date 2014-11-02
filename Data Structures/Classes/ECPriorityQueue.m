@@ -112,7 +112,7 @@
 -(void)heapifyArray:(NSArray *)array {
  
     for (id obj in array) {
-        [self addObject:obj];
+        [self push:obj];
     }
 }
 
@@ -120,7 +120,7 @@
  * - Insert the object at the end of the heap
  * - Exhange the object's Node it's parent intil it's parent is smaller/bigger that him
  */
--(void)addObject:(id)anObject {
+-(void)push:(id)anObject {
     
     __block NSInteger currentPos;
     __block NSInteger parentIndex;

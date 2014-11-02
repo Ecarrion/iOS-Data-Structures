@@ -16,10 +16,10 @@ typedef BOOL(^compareBlock)(id obj1, id obj2);
 - (instancetype)initWithArray:(NSArray *)arrayOfOjects andCompareBlock:(compareBlock)cBlock;
 - (instancetype)initWithCompareBlock:(compareBlock)cBlock;
 
-- (void)addObject:(id)anObject;
 - (BOOL)isEmpty;
 - (id)top;
 - (void)pop;
+- (void)push:(id)anObject;
 
 
 
