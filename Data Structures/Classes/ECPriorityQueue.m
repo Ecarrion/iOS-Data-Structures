@@ -8,28 +8,39 @@
 
 #import "ECPriorityQueue.h"
 
-@implementation ECPriorityQueue {
+@interface ECPriorityQueue ()  {
     
     NSMutableArray * heap;
 }
 
+@property (nonatomic, copy) compareBlock cBlock;
+
+@end
+
+@implementation ECPriorityQueue
+
 - (instancetype)init {
+    
+    return [self initWithArray:nil andCompareBlock:nil];
+}
+
+-(instancetype)initWithCompareBlock:(compareBlock)cBlock {
+    
+    return [self initWithArray:nil andCompareBlock:cBlock];
+}
+
+- (instancetype)initWithArray:(NSArray *)arrayOfOjects andCompareBlock:(compareBlock)cBlock {
     
     self = [super init];
     if (self) {
         
         heap = [NSMutableArray array];
-    }
-    
-    return self;
-}
-
-- (instancetype)initWithArray:(NSArray *)arrayOfOjects {
-    
-    self = [self init];
-    if (self) {
         
-        [self heapifyArray:arrayOfOjects];
+        if (cBlock)
+            self.cBlock = cBlock;
+        
+        if (arrayOfOjects)
+            [self heapifyArray:arrayOfOjects];
     }
     return self;
 }
@@ -73,8 +84,7 @@
             childIndex = [self leftChildIndexForIndex:nodeIndex];
         }
         
-#warning use compare block of function
-        else if ([leftChildren intValue] < [rightChildren intValue]) {
+        else if (self.cBlock(leftChildren, rightChildren)) {
             
             childNode = leftChildren;
             childIndex = [self leftChildIndexForIndex:nodeIndex];
@@ -87,9 +97,7 @@
     };
     
     recalculateValues(0);
-    
-#warning use compare block of function
-    while (childNode && [node intValue] > [childNode intValue]) {
+    while (childNode &&  self.cBlock(childNode, node)) {
         
         [heap exchangeObjectAtIndex:nodeIndex withObjectAtIndex:childIndex];
         recalculateValues(childIndex);
@@ -124,12 +132,12 @@
         parentNode = [self nodeAtIndex:parentIndex];
     };
     
+    
     [heap addObject:anObject];
     recalculateValues(heap.count - 1);
     
-#warning ask for a compare block or function
     //Percolate up
-    while ([anObject intValue] < [parentNode intValue]) {
+    while (self.cBlock(anObject, parentNode)) {
         
         [heap exchangeObjectAtIndex:currentPos withObjectAtIndex:parentIndex];
         recalculateValues(parentIndex);

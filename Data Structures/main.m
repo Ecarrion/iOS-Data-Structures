@@ -14,7 +14,12 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        ECPriorityQueue * bh = [[ECPriorityQueue alloc] initWithArray:@[@(3), @(7), @(8), @(4), @(2), @(46), @(7), @(5), @(1), @(2), @(4)]];
+        ECPriorityQueue * bh = [[ECPriorityQueue alloc] initWithArray:@[@(3), @(7), @(8), @(4), @(2), @(46), @(7), @(5), @(1), @(2), @(4)]
+                                                      andCompareBlock:^BOOL(id obj1, id obj2) {
+                                                          
+                                                          return [obj1 intValue] < [obj2 intValue];
+                                                          
+                                                      }];
         
         while (![bh isEmpty]) {
             NSLog(@"%@", [bh top]);

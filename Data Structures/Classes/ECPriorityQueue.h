@@ -8,13 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+typedef BOOL(^compareBlock)(id obj1, id obj2);
+
 @interface ECPriorityQueue : NSObject
 
 
-- (instancetype)initWithArray:(NSArray *)arrayOfOjects;
+- (instancetype)initWithArray:(NSArray *)arrayOfOjects andCompareBlock:(compareBlock)cBlock;
+- (instancetype)initWithCompareBlock:(compareBlock)cBlock;
+
 - (void)addObject:(id)anObject;
 - (BOOL)isEmpty;
 - (id)top;
 - (void)pop;
+
+
 
 @end
