@@ -10,7 +10,7 @@
 		26D71D3F19F49D5B00282EB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D3E19F49D5B00282EB5 /* main.m */; };
 		26D71D4A19F4A39500282EB5 /* ECQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D4919F4A39500282EB5 /* ECQueue.m */; };
 		26D71D4D19F4A3D000282EB5 /* ECStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D4C19F4A3D000282EB5 /* ECStack.m */; };
-		26D71D5219F4AFB600282EB5 /* ECBinaryHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D5119F4AFB600282EB5 /* ECBinaryHeap.m */; };
+		26D71D5219F4AFB600282EB5 /* ECPriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D5119F4AFB600282EB5 /* ECPriorityQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,8 +32,8 @@
 		26D71D4919F4A39500282EB5 /* ECQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECQueue.m; sourceTree = "<group>"; };
 		26D71D4B19F4A3D000282EB5 /* ECStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECStack.h; sourceTree = "<group>"; };
 		26D71D4C19F4A3D000282EB5 /* ECStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECStack.m; sourceTree = "<group>"; };
-		26D71D5019F4AFB600282EB5 /* ECBinaryHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECBinaryHeap.h; sourceTree = "<group>"; };
-		26D71D5119F4AFB600282EB5 /* ECBinaryHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECBinaryHeap.m; sourceTree = "<group>"; };
+		26D71D5019F4AFB600282EB5 /* ECPriorityQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPriorityQueue.h; sourceTree = "<group>"; };
+		26D71D5119F4AFB600282EB5 /* ECPriorityQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPriorityQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +103,8 @@
 		26D71D5319F4AFD400282EB5 /* Heap */ = {
 			isa = PBXGroup;
 			children = (
-				26D71D5019F4AFB600282EB5 /* ECBinaryHeap.h */,
-				26D71D5119F4AFB600282EB5 /* ECBinaryHeap.m */,
+				26D71D5019F4AFB600282EB5 /* ECPriorityQueue.h */,
+				26D71D5119F4AFB600282EB5 /* ECPriorityQueue.m */,
 			);
 			name = Heap;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26D71D3F19F49D5B00282EB5 /* main.m in Sources */,
-				26D71D5219F4AFB600282EB5 /* ECBinaryHeap.m in Sources */,
+				26D71D5219F4AFB600282EB5 /* ECPriorityQueue.m in Sources */,
 				26D71D4D19F4A3D000282EB5 /* ECStack.m in Sources */,
 				26D71D4A19F4A39500282EB5 /* ECQueue.m in Sources */,
 			);
@@ -282,6 +282,7 @@
 				26D71D4419F49D5B00282EB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

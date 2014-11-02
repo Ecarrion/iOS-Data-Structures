@@ -1,5 +1,5 @@
 //
-//  ECBinaryHeap.h
+//  ECPriorityQueue.h
 //  Data Structures
 //
 //  Created by Ernesto Carrión on 10/19/14.
@@ -8,14 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ECBinaryHeap : NSObject
+@interface ECPriorityQueue : NSObject
 
 
 - (instancetype)initWithArray:(NSArray *)arrayOfOjects;
 - (void)addObject:(id)anObject;
-- (id)top;
 - (BOOL)isEmpty;
-
-- (void)traverseStartingAt:(NSInteger)index;
+- (id)top;
+- (void)pop;
 
 @end

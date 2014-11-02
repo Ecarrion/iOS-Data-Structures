@@ -9,13 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "ECQueue.h"
 #import "ECStack.h"
-#import "ECBinaryHeap.h"
+#import "ECPriorityQueue.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        ECBinaryHeap * bh = [[ECBinaryHeap alloc] initWithArray:@[@(3), @(7), @(8), @(4), @(2), @(46), @(7), @(5), @(1), @(2), @(4)]];
-        NSLog(@"%@", [bh top]);
+        ECPriorityQueue * bh = [[ECPriorityQueue alloc] initWithArray:@[@(3), @(7), @(8), @(4), @(2), @(46), @(7), @(5), @(1), @(2), @(4)]];
+        
+        while (![bh isEmpty]) {
+            NSLog(@"%@", [bh top]);
+            [bh pop];
+        }
         
     }
     return 0;
