@@ -31,8 +31,8 @@
 		26B63D611A05CB1C003D6CFA /* NSMutableArray+Algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Algorithm.h"; sourceTree = "<group>"; };
 		26B63D621A05CB1C003D6CFA /* NSMutableArray+Algorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Algorithm.m"; sourceTree = "<group>"; };
 		26B63D651A05DE90003D6CFA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		26B63D6A1A05E61B003D6CFA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		26B63D6B1A05E621003D6CFA /* ECDataStructures.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ECDataStructures.podspec; sourceTree = "<group>"; };
+		26B63D6C1A05E6C9003D6CFA /* ECDataStructures.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ECDataStructures.podspec; sourceTree = "<group>"; };
+		26B63D6D1A05E6C9003D6CFA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		26D71D3B19F49D5B00282EB5 /* Data Structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Data Structures"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D71D3E19F49D5B00282EB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26D71D4819F4A39500282EB5 /* ECQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECQueue.h; sourceTree = "<group>"; };
@@ -66,6 +66,9 @@
 		26D71D3219F49D5B00282EB5 = {
 			isa = PBXGroup;
 			children = (
+				26B63D6C1A05E6C9003D6CFA /* ECDataStructures.podspec */,
+				26B63D6D1A05E6C9003D6CFA /* LICENSE */,
+				26B63D651A05DE90003D6CFA /* README.md */,
 				26D71D3D19F49D5B00282EB5 /* Data Structures */,
 				26D71D3C19F49D5B00282EB5 /* Products */,
 			);
@@ -83,9 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				26D71D3E19F49D5B00282EB5 /* main.m */,
-				26B63D6B1A05E621003D6CFA /* ECDataStructures.podspec */,
-				26B63D6A1A05E61B003D6CFA /* LICENSE */,
-				26B63D651A05DE90003D6CFA /* README.md */,
 				26D71D4519F4A27B00282EB5 /* Classes */,
 			);
 			path = "Data Structures";
