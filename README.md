@@ -15,11 +15,3 @@ At the time of writing this I've implemented/ported:
 - NSMutableArray+nextPermutation
 
 All of this are fully capable of holding Obj-c Objects and use blocks for doing the correspondent comparitions.
-
-
-License
--------
-
-MIT
-
-**Free Software, Hell Yeah!**
