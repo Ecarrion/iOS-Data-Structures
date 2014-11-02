@@ -10,6 +10,7 @@
 #import "ECQueue.h"
 #import "ECStack.h"
 #import "ECPriorityQueue.h"
+#import "NSMutableArray+Algorithm.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -26,6 +27,27 @@ int main(int argc, const char * argv[]) {
             [bh pop];
         }
         
+        
+        
+        puts("");
+        puts("---------------------------------------------------");
+        puts("");
+        
+        
+        NSMutableArray * arr = [@[@"a", @"a", @"b"] mutableCopy];
+        do {
+            NSLog(@"%@", arr);
+        } while ([arr nextPermutationOnCompare:^BOOL(id obj1, id obj2) {
+            
+            //return [obj1 intValue] < [obj2 intValue];
+            NSComparisonResult result = [obj1 compare:obj2 options:NSCaseInsensitiveSearch];
+            if (result == NSOrderedAscending) {
+                return YES;
+            }
+            
+            return NO;
+            
+        }]);
     }
     return 0;
 }

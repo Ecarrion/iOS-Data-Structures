@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26B63D631A05CB1C003D6CFA /* NSMutableArray+Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B63D621A05CB1C003D6CFA /* NSMutableArray+Algorithm.m */; };
 		26D71D3F19F49D5B00282EB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D3E19F49D5B00282EB5 /* main.m */; };
 		26D71D4A19F4A39500282EB5 /* ECQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D4919F4A39500282EB5 /* ECQueue.m */; };
 		26D71D4D19F4A3D000282EB5 /* ECStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D4C19F4A3D000282EB5 /* ECStack.m */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		26B63D611A05CB1C003D6CFA /* NSMutableArray+Algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Algorithm.h"; sourceTree = "<group>"; };
+		26B63D621A05CB1C003D6CFA /* NSMutableArray+Algorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Algorithm.m"; sourceTree = "<group>"; };
 		26D71D3B19F49D5B00282EB5 /* Data Structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Data Structures"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D71D3E19F49D5B00282EB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26D71D4819F4A39500282EB5 /* ECQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECQueue.h; sourceTree = "<group>"; };
@@ -47,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26B63D641A05CB20003D6CFA /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				26B63D611A05CB1C003D6CFA /* NSMutableArray+Algorithm.h */,
+				26B63D621A05CB1C003D6CFA /* NSMutableArray+Algorithm.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		26D71D3219F49D5B00282EB5 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +90,7 @@
 				26D71D4E19F4A3DC00282EB5 /* Queue */,
 				26D71D4F19F4A3EA00282EB5 /* Stack */,
 				26D71D5319F4AFD400282EB5 /* Heap */,
+				26B63D641A05CB20003D6CFA /* Category */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -167,6 +180,7 @@
 			files = (
 				26D71D3F19F49D5B00282EB5 /* main.m in Sources */,
 				26D71D5219F4AFB600282EB5 /* ECPriorityQueue.m in Sources */,
+				26B63D631A05CB1C003D6CFA /* NSMutableArray+Algorithm.m in Sources */,
 				26D71D4D19F4A3D000282EB5 /* ECStack.m in Sources */,
 				26D71D4A19F4A39500282EB5 /* ECQueue.m in Sources */,
 			);
