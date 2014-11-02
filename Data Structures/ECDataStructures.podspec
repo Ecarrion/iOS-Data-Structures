@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://www.twitter.com/ecarrion89"
 
   s.source       = { :git => "https://github.com/Ecarrion/iOS-Data-Structures", :tag => "1.0" }
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "Data Structures/Classes/*.{h,m]"
 
 end
