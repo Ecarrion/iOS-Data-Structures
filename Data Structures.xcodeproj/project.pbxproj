@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		26B63D631A05CB1C003D6CFA /* NSMutableArray+Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 26B63D621A05CB1C003D6CFA /* NSMutableArray+Algorithm.m */; };
+		26B63D671A05DE90003D6CFA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 26B63D651A05DE90003D6CFA /* README.md */; };
 		26D71D3F19F49D5B00282EB5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D3E19F49D5B00282EB5 /* main.m */; };
 		26D71D4A19F4A39500282EB5 /* ECQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D4919F4A39500282EB5 /* ECQueue.m */; };
 		26D71D4D19F4A3D000282EB5 /* ECStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D71D4C19F4A3D000282EB5 /* ECStack.m */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		26B63D611A05CB1C003D6CFA /* NSMutableArray+Algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Algorithm.h"; sourceTree = "<group>"; };
 		26B63D621A05CB1C003D6CFA /* NSMutableArray+Algorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Algorithm.m"; sourceTree = "<group>"; };
+		26B63D651A05DE90003D6CFA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		26D71D3B19F49D5B00282EB5 /* Data Structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Data Structures"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D71D3E19F49D5B00282EB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26D71D4819F4A39500282EB5 /* ECQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECQueue.h; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				26D71D3E19F49D5B00282EB5 /* main.m */,
+				26B63D651A05DE90003D6CFA /* README.md */,
 				26D71D4519F4A27B00282EB5 /* Classes */,
 			);
 			path = "Data Structures";
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26B63D671A05DE90003D6CFA /* README.md in Sources */,
 				26D71D3F19F49D5B00282EB5 /* main.m in Sources */,
 				26D71D5219F4AFB600282EB5 /* ECPriorityQueue.m in Sources */,
 				26B63D631A05CB1C003D6CFA /* NSMutableArray+Algorithm.m in Sources */,
