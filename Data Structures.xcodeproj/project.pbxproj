@@ -32,6 +32,7 @@
 		26B63D621A05CB1C003D6CFA /* NSMutableArray+Algorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Algorithm.m"; sourceTree = "<group>"; };
 		26B63D651A05DE90003D6CFA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		26B63D681A05E007003D6CFA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		26B63D691A05E2B1003D6CFA /* ECDataStructures.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ECDataStructures.podspec; sourceTree = "<group>"; };
 		26D71D3B19F49D5B00282EB5 /* Data Structures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Data Structures"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D71D3E19F49D5B00282EB5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		26D71D4819F4A39500282EB5 /* ECQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECQueue.h; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 				26D71D3E19F49D5B00282EB5 /* main.m */,
 				26B63D681A05E007003D6CFA /* LICENSE */,
 				26B63D651A05DE90003D6CFA /* README.md */,
+				26B63D691A05E2B1003D6CFA /* ECDataStructures.podspec */,
 				26D71D4519F4A27B00282EB5 /* Classes */,
 			);
 			path = "Data Structures";
